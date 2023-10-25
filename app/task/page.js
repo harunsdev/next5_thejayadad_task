@@ -1,5 +1,6 @@
 "use client";
 
+import NewTask from "@/components/NewTask";
 import Stats from "@/components/Stats";
 import TaskList from "@/components/TaskList";
 import { useSession } from "next-auth/react";
@@ -13,11 +14,11 @@ const Task = () => {
   }
   return (
     <section className="mx-auto max-w-screen-xl py-6">
+      <NewTask />
       <div className="flex items-center">
         <Stats />
       </div>
-      <TaskList />
-      TaskPage
+      <TaskList />   
     </section>
   );
 };

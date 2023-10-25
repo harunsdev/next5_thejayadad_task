@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <header className="px-4 py-8">
       <div className="flex justify-between max-w-screen-xl mx-auto">
-        <Link href={"/"}>TaskManager</Link>
+        <Link href={"/"} className="text-xl text-orange-500">TaskManager</Link>
         <div className="flex">
           {session? (
             <>
