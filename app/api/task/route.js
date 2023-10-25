@@ -1,6 +1,9 @@
 import db from "@/lib/db.js";
 import Task from "@/models/Task";
 
+
+//? ======== GET/Read All Tasks =========
+
 export async function GET(req) {
   await db.connect();
   try {
@@ -10,6 +13,8 @@ export async function GET(req) {
     return new Response(JSON.stringify(null), { status: 500 });
   }
 }
+
+//? ======== POST/Create Task =========
 
 export async function POST(req) {
   await db.connect();
