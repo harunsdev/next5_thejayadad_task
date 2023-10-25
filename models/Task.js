@@ -12,7 +12,7 @@ const TaskSchema = new mongoose.Schema({
   status: {
     type: String,
     required: true,
-    enum: ["Open", "closed", "Progress"],
+    enum: ["Open", "Closed", "Progress"],
   },
 }, {timestamps: true});
 
